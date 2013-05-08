@@ -27,6 +27,11 @@ html {
 
 body{
 	height: 100%;
+	background-repeat: no-repeat center center fixed;
+ 	 -webkit-background-size: cover;
+ 	 -moz-background-size: cover;
+ 	 -o-background-size: cover;
+ 	 background-size: cover;
 	/*background-color: #000000;*/
 	/*background-image: url('/static/img/bg_1.jpg');*/
 }
@@ -42,22 +47,47 @@ font-style: normal;
 h1{	
 	margin-top: 13px;
 	padding-top: 20px;
+	padding-left: 5%;
 	color: #000000;
 	background-color:#ffffff; 
 	font:bold 22px Helvetica;
 	line-height:20px;
 	letter-spacing:1px;
+	/*text-transform: capitalize;*/
 }
 
 
 h2{
 	color: #ffffff;
 	background-color:#ff0000;
-	font:italic 22px Helvetica;
+	font:italic 72px Helvetica;
+	font-weight: bold;
 	letter-spacing: 1px;
+	padding-left: 5%;
+	padding-right: 5%;
+	/*text-transform: capitalize;*/
 }
 
-
+#clicker {
+	margin-left: 5%;
+	background-color:transparent;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:0px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:Helvetica;
+	font-size:12px;
+	font-weight:bold;
+	padding:9px 8px;
+	text-decoration:none;
+	text-shadow:-2px 1px 3px #ffffff;
+}
+#clicker:active {
+	position:relative;
+	top:1px;
+}
 /*h3{
 	font:normal 12px Georgia;
 }*/
@@ -77,7 +107,7 @@ h2{
 
 p{
 	color: #ffffff;
-	background-color:#ff0000;
+	/*background-color:#ff0000;*/
 	font:italic 22px Helvetica;
 	letter-spacing: 1px;
 }
