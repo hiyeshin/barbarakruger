@@ -12,7 +12,7 @@ from tornado.options import define, options
 from markov_by_char import CharacterMarkovGenerator
 
 define("port", default = 8000, help = "Run on the given port ", type = int)
-define("n", default = 6, help = "length of n-gram ", type = int)
+define("n", default = 5, help = "length of n-gram ", type = int)
 
 class Application(tornado.web.Application):
 	def __init__(self):

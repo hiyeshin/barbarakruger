@@ -58,7 +58,7 @@ class MarkovGenerator(object):
 if __name__ == '__main__':
 	import sys
 
-	generator = MarkovGenerator(n = 3, max = 200)
+	generator = MarkovGenerator(n = 4, max = 200)
 
 	for line in sys.stdin:
 		line = line.strip()
