@@ -1,0 +1,207 @@
+/*CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td { margin: 0;padding: 0;border: 0;outline: 0;}
+:focus {outline: 0;}
+table {border-collapse: separate;border-spacing: 0;}
+caption, th, td {text-align: left;font-weight: normal;}
+a {text-decoration:none;cursor:pointer;}
+a, a:hover, a:active {color:#000;}
+ul {list-style:none;}
+.clear{clear:both;}
+.full{width:100%;}
+.hidden{display:none;}
+/*-----------------------------------------------*/
+
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+
+body{
+	height: 100%;
+	background-color: #000000;
+}
+
+
+@font-face {
+font-family: "Futura", Times New Roman, Serif;
+font-weight: normal;
+font-style: normal;
+}
+
+
+h1{	
+	color: #ff0000;
+	font:bold 22px Futura;
+	line-height:20px;
+	letter-spacing:1px;
+}
+
+
+h2{
+	font:italic 22px Georgia;
+	letter-spacing: 1px;
+	/*line-height:30px;*/
+}
+
+
+h3{
+	font:normal 12px Georgia;
+	/*line-height:30px;*/
+}
+
+
+h4{
+	/* THIS IS FOR BODONI */
+	/*font: italic 27px "ltc-bodoni-175";*/
+	font: 14px "ltc-bodoni-175";
+	letter-spacing: 0px;
+}
+
+
+h5 {
+	font:normal 16px Georgia;
+	color: #887072;
+
+}
+
+
+p{
+	font:normal 12px Georgia;
+	line-height:18px;
+	color: white;
+}
+
+
+ul{
+	list-style-type:none;
+	margin:0;
+	padding-bottom:180px;
+	overflow: hidden;
+}
+
+
+li{
+	display:inline;
+	float: right;
+}
+
+
+li a{
+	width:80px;
+	display: block;
+	padding-left: 20px;
+}
+
+li a:hover{
+	
+	display: none;
+	/*color: #333;*/
+}
+
+
+
+a:hover{
+
+	border-bottom: 1px dotted #000; 
+	/*color: #333;
+	font-weight: bold;*/
+	text-decoration: none;
+}
+
+
+ #container {
+	position: absolute;
+	top:220px;
+	/*left:0px;*/ 
+	width:100%;
+	min-height:100%;
+	height: auto !important;
+	min-width:1150px;
+	margin: 0 auto -50px;
+	/*background-image: url('/static/img/linedpaper.png');*/
+}
+
+
+#push, #footer{
+	font: normal 11px "Georgia";
+	letter-spacing: 2px;
+	/*position: absolute;*/
+	/*margin-top: -150px;
+	margin: 0px auto;*/
+	height: 50px;
+	padding-left: 40%;
+	/*clear: both;*/
+	/*padding-top:20px;*/
+}
+
+
+article:hover {
+	/*background-color:#f8f8f8;*/
+	/*background-image: url('/static/img/linedpaper.png');*/
+	/*background-repeat:repeat-x;*/
+}
+
+.displayed {
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+
+
+#header{
+	position: absolute;
+	z-index:1000;
+	top: 25px;
+	left: 6%;
+/*	height:253px;
+	width:932px;*/
+	overflow:hidden;
+	color:#000;
+}
+
+#line-longest{
+	position: absolute;
+	z-index:900;
+	top: 115px;
+	left: 9%;
+/*	height:253px;
+	width:932px;*/
+	overflow:hidden;
+	/*color:#000;*/
+}
+
+
+#introduction {
+	position: relative;
+	top: 300 px;
+	padding-left: 140px;
+	padding-top: 30px;
+	/*padding-right: -0px;*/
+	margin-right: -70px;
+	float: left;
+}
+
+.dropcap{
+	color: #887072;
+	font:normal 48px "ltc-bodoni-175", Georgia;
+	line-height:20px;
+	letter-spacing:1px;
+
+}
+
+
+.subtitle{
+	z-index: 1000;
+}
+
+
