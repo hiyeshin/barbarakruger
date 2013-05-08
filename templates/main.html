@@ -14,13 +14,15 @@
 	</head>
 
 	<body>
-		<h1>GENERATE NEW BARBARA KRUGER LINE!</h1>
-		<br/>
-		<p>
+		<container>
+			<h1>GENERATE NEW BARBARA KRUGER LINE!</h1>
+			<br/>
+			<p>
 			<input type = "button" id = "clicker" value = "CLICK TO GENERATE A NEW BARBARA KRUGER LINE!"> 
-		</p>
-		<br>
-		<h2 id = "results"></div>
+			</p>
+			<br>
+		<h2 id = "results">
+		</container>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 	
 		<script>
@@ -30,9 +32,17 @@
 				var screen_name = "barbarakruger"
 				$.get('/markov', {"screen_name": screen_name}, function(data){
 					$('#results').html(data);
+				});
+			var images = ['bg_1.jpg','bg_2.jpg', 'bg_3.jpg', 'bg_4.jpg', 'bg_5.jpg', 'bg_6.jpg', 'bg_7.jpg']
+			$('body').css({'background-image':'url(/static/img/' + images[Math.floor(Math.random() * images.length)] + ')'});
+
 			});
+			var images = ['bg_1.jpg','bg_2.jpg', 'bg_3.jpg', 'bg_4.jpg', 'bg_5.jpg', 'bg_6.jpg', 'bg_7.jpg']
+			$('body').css({'background-image':'url(/static/img/' + images[Math.floor(Math.random() * images.length)] + ')'});
+
+			
+
 		});
-});
 
 		</script>
 	</body>
